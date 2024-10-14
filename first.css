@@ -3,7 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #ddd;
     margin: 0;
     padding: 20px;
 }
@@ -23,8 +23,8 @@ header {
 
 header button {
     padding: 10px;
-    background-color: #fff;
-    color: #4CAF50;
+    background-color: orangered;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -43,12 +43,19 @@ header button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.input-section, #exerciseDisplay, #summary {
+.input-section {
     width: 100%;
     max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.input-section input, .input-section button, .time-inputs input {
+.input-section input,
+.input-section button,
+.time-inputs input {
     margin: 5px;
 }
 
@@ -71,4 +78,10 @@ li {
 
 .time-inputs input {
     width: 70px;
+}
+
+#exerciseDisplay,
+#summary {
+    width: 100%;
+    max-width: 800px;
 }
