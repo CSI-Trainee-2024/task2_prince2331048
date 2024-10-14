@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Time Tracker</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+<body>
+    <header>
+        <h1>Track Your Reps & Time Efficiently</h1>
+        <button id="begin-workout">Begin Workout</button>
+    </header>
+    <main>
+        <div id="exercise-container">
+            <h2>Add Your Exercise</h2>
+            <label for="exercise-name">Exercise Name:</label>
+            <input type="text" id="exercise-name">
+            
+            <label for="exercise-reps">Reps:</label>
+            <input type="number" id="exercise-reps">
+            
+            <label for="exercise-time">Time (hh:mm:ss):</label>
+            <input type="text" id="exercise-time">
+            
+            <button id="add-exercise">Add to Workout Plan</button>
+        </div>
+        
+        <div id="workout-plan">
+            <h2>Your Workout Plan</h2>
+            <ul id="exercise-list">
+                <!-- List of exercises will be added here dynamically -->
+            </ul>
+        </div>
+        
+        <div id="current-exercise">
+            <h2>Current Exercise</h2>
+            <p id="exercise-name-timer"></p>
+            <p id="exercise-time-timer"></p>
+            <button id="complete-exercise">Complete</button>
+        </div>
+
+        <div id="results">
+            <button id="show-results">Show Results</button>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Exercise Name</th>
+                        <th>Time Given</th>
+                        <th>Actual Completion Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Results will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="first.js"></script>
+</body>
+</html>
