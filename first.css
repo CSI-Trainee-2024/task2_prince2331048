@@ -3,7 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ddd;
+    background:url(1.jpg);
     margin: 0;
     padding: 20px;
 }
@@ -30,33 +30,33 @@ header button {
     cursor: pointer;
 }
 
-.container {
-    margin-top: 20px;
+main {
     width: 100%;
     max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.input-section {
-    width: 100%;
-    max-width: 800px;
+#exercise-container {
+    margin-top: 20px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
 }
 
-.input-section input,
-.input-section button,
-.time-inputs input {
-    margin: 5px;
+#exercise-container h2, #exercise-container label, #exercise-container input, #exercise-container button {
+    margin: 10px 0;
+}
+
+#workout-plan, #current-exercise, #results {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
 }
 
 ul {
@@ -72,16 +72,38 @@ li {
     border-bottom: 1px solid #ddd;
 }
 
-.time-inputs {
-    display: flex;
-}
-
-.time-inputs input {
-    width: 70px;
-}
-
-#exerciseDisplay,
-#summary {
+#exercise-name, #exercise-reps, #exercise-time {
     width: 100%;
-    max-width: 800px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#exercise-container button, #complete-exercise, #show-results {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#complete-exercise, #show-results {
+    display: none;
+}
+
+#results-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#results-table th, #results-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+#results-table th {
+    background-color: #4CAF50;
+    color: white;
 }
